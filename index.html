@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Accueil</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="images/occulus_quest.png">
+	</head>
+
+<body>
+
+<header>
+	<h1>
+      <ul>
+        <li><a href=index.html><img src="images/occulus_quest.png" class = "logo" alt= "occulus quest"></a></li>
+        <li><a href="origine.html">Origines</a></li>
+        <li><a href="divertissement.html">Divertissement</a></li>
+        <li><a href="professionnel.html">Monde professionnel</a></li>
+        <li><a href="inconvenients.html">Inconvénients</a></li>
+        <li><a href="futur.html">À l'avenir</a></li>
+      </ul>
+	</h1>
+</header>	
+
+	
+	<h2>La Réalité Virtuelle et la Réalité Augmentée</h2>
+		
+		<p>Réalité Virtuelle, Réalité Augmentée, Casques VR, Metaverse, Tracking, Mixed Reality ... </p>
+		<p>Ce sont des termes qu'on a tous déjà entendus et certaines technologies qui résonnent peut-être avec vous, mais que cachent-elles vraiment, à quoi ces technologies servent-elles et comment influencent-elles notre quotidien et notre futur?</p>
+
+    <h3>Des technologies innovantes</h3>
+		
+		<p>Commençons par dissiper toute confusion : la réalité virtuelle (VR) et la réalité augmentée (AR) sont deux technologies différentes et uniques.</p>
+			<img src="images/vr1.jpg" class="image_droite" alt="Homme regardant une ville futuristique à travers un casque de réalité virtuelle">
+
+			<h4>La Réalité Virtuelle (VR)</h4>
+		
+				<p>La réalité virtuelle, souvent abrégée en VR (Virtual Reality) désigne les dispositifs permettant de simuler un environnement via une machine, souvent un ordinateur. </p>
+				<p>La VR plonge les utilisateurs dans des mondes entièrement nouveaux, à travers une expérience sensorielle immersive, le plus souvent par la vue mais également le toucher,  l’ouïe,  où même l’odorat.</p>
+				<p>L’expérience se voulant la plus immersive possible, l'utilisation d'un casque de réalité virtuelle est presque essentielle. Le casque exploite le principe d'affichage en <span class="mot-cle"><strong>3D stéréoscopique</strong><span class="definition"><strong>3D stéréoscopique: </strong>méthode qui permet de donner une illusion de profondeur à une image ou à une vidéo</span></span> pour transporter le spectateur dans un univers virtuel.</p>
+			<img src="images/ar1.jpg" class="image_gauche" alt="Homme regardant un salon à travers une tablette utilisant la réalité augmentée">
+
+			<h4>La Réalité Augmentée (AR)</h4>
+			
+				<p>La réalité augmentée, souvent abrégée en AR (Augmented Reality) est une technologie qui permet d’intégrer des éléments virtuels en 3D (en temps réel) au sein d’un environnement réel.</p>
+				<p>Son principe: fusionner virtuel et réel, créant une intégration presque parfaite pour l’utilisateur.</p>
+				<p>Grâce aux smartphones, la miniaturisation de la réalité augmentée est devenu réalité. Les appareils photo, écrans, logiciels et <span class="mot-cle"><strong>l'informatique embarquée</strong><span class="definition"><strong>Informatique embarquée: </strong>					système informatique autonome dédié à une tâche précise et intégré dans un équipement matériel</span></span> ont permis le développement d'applications mobiles pratiques et pertinentes.</p>
+
+<footer>
+
+	1<sup><u>ère</u></sup> 2023/2024. Projet WEB - NSI : Yacine Riad - Rayan Benmoussa
+    <a href=origine.html><img src="images/fleche_droite.png" class = "fleches" alt= "fleche pointant vers la droite"></a>
+    
+    Page affichée le <span id="date"></span> à <span id="heure"></span>
+    <script>
+        const now = new Date();
+        const jour = now.toLocaleDateString('fr-FR', date);
+        const temps = now.toLocaleTimeString('fr-FR', heure);
+        document.getElementById('date').innerText = jour;
+        document.getElementById('heure').innerText = temps;
+    </script>
+
+</footer>	
+
+</body>
+</html>

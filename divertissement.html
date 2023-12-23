@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Dans le Divertissement</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/occulus_quest.png">
+    </head>
+
+<body>
+
+<header>
+    <h1>
+      <ul>
+        <li><a href=index.html><img src="images/occulus_quest.png" class = "logo" alt= "occulus quest"></a></li>
+        <li><a href="origine.html">Origines</a></li>
+        <li><a href="divertissement.html">Divertissement</a></li>
+        <li><a href="professionnel.html">Monde professionnel</a></li>
+        <li><a href="inconvenients.html">Inconvénients</a></li>
+        <li><a href="futur.html">À l'avenir</a></li>
+      </ul>
+    </h1>
+</header>   
+ 
+		<h2>Utilisations et Contributions dans le Divertissement</h2>
+<p>Sans surprise, l'industrie des jeux vidéo est l'un des plus grands promoteurs de la réalité virtuelle. Cependant, à mesure que ces technologies se répandaient, tout le secteur du divertissement s'adaptait. L'utilisation de la réalité virtuelle et augmentée dans le domaine du divertissement va, aujourd’hui, bien au-delà des jeux vidéo : la musique, le cinéma, les parcs à thème, ...
+
+</p>
+
+<div class="visionneuse">
+
+  <div class="image_visionneuse">
+    <img src="images/4dx_vr1.jpg" style="width:100%">
+  </div>
+
+  <div class="image_visionneuse">
+    <img src="images/4dx_vr2.jpg" style="width:100%">
+  </div>
+
+  <div class="image_visionneuse">
+    <img src="images/jeu_ar1.jpg" style="width:100%">
+  </div>
+  
+  <div class="image_visionneuse">
+    <img src="images/jeu_ar2.jpg" style="width:100%">
+  </div>
+  
+  <div class="image_visionneuse">
+    <img src="images/park_vr1.jpg" style="width:100%">
+  </div>
+  
+  <div class="image_visionneuse">
+    <img src="images/park_vr2.jpg" style="width:100%">
+  </div>
+
+  <a class="precedent" onclick="SlideSuivante(-1)">&#10094;</a>
+  <a class="suivant" onclick="SlideSuivante(1)">&#10095;</a>
+
+<div style="text-align:center">
+  <span class="point" onclick="SlideActuelle(1)"></span>
+  <span class="point" onclick="SlideActuelle(2)"></span>
+  <span class="point" onclick="SlideActuelle(3)"></span>
+  <span class="point" onclick="SlideActuelle(4)"></span>
+  <span class="point" onclick="SlideActuelle(5)"></span>
+  <span class="point" onclick="SlideActuelle(6)"></span>
+</div>
+</div>
+
+<script>
+let numero_image = 1;
+SlideAfficher(numero_image);
+function SlideSuivante(n) {
+  SlideAfficher(numero_image += n);
+}
+function SlideActuelle(n) {
+  SlideAfficher(numero_image = n);
+}
+function SlideAfficher(n) {
+  let i;
+  let slide = document.getElementsByClassName("image_visionneuse");
+  let point = document.getElementsByClassName("point");
+  if (n > slide.length) {numero_image = 1}
+  if (n < 1) {numero_image = slide.length}
+  for (i = 0; i < slide.length; i++) {
+    slide[i].style.display = "none";
+  }
+  for (i = 0; i < point.length; i++) {
+    point[i].className = point[i].className.replace(" active", "");
+  }
+  slide[numero_image-1].style.display = "block";
+  point[numero_image-1].className += " active";
+}
+</script>
+
+<h4>Films et Expériences Immersives</h4>
+
+  <p>L'industrie du cinéma s'est distingué comme l'un des pionniers de l'intégration de la réalité virtuelle dans le domaine du divertissement, en en  présentant même dans le Festival de Cannes, un événement emblématique du cinéma. En 2016, le festival a innové en lançant une section dédiée à la réalité virtuelle, diffusant ainsi des présentations et des courts métrages VR. Cette initiative a ouvert la voie à une nouvelle ère où la réalité virtuelle est reconnue comme un moyen puissant de raconter des histoires.</p>
+  <p>En ajoutant une couche d'immersion supplémentaire, certaines expériences combinent la réalité virtuelle avec la <span class="mot-cle"><strong>4DX</strong><span class="definition"><strong>4DX : </strong>technologie associant les mouvements de sièges et effets sensoriels pour rendre les films plus immersifs</span></span>. La technologie 4DX, déjà democratisée, a révolutionné la façon dont les spectateurs ressentent les films. En intégrant la réalité virtuelle à ces éléments physiques, les créateurs cherchent à transcender les limites traditionnelles du divertissement cinématographique. Imaginez être plongé dans un monde virtuel tout en ressentant physiquement les mouvements et les sensations qui accompagnent l'action à l'écran.</p>
+  <p>La réalité virtuelle offre une interactivité accrue, suggérant un avenir où les frontières entre la réalité et les films pourraient s'estomper. La production vidéo en réalité virtuelle et les dispositifs de lecture qui en résultent créent des expériences extraordinaires, transformant fondamentalement la manière dont les gens peuvent interagir avec leur divertissement. Ces avancées ouvrent la porte à une nouvelle ère de créativité et d'engagement dans le domaine cinématographique et artistique.</p>
+
+<h4>Jeux Vidéos</h4>
+  <iframe class ="video_droite" src="https://www.youtube.com/embed/WVueKYbwZrs" frameborder="0" allowfullscreen></iframe>
+
+  <p>Sans conteste, l'industrie du jeu vidéo est l'un des domaines les plus impactés par la RV. Des casques comme l'Oculus Rift, HTC Vive et PlayStation VR ont introduit une dimension immersive, permettant aux joueurs d'explorer des mondes virtuels de manière réaliste. Les jeux en réalité virtuelle offrent une expérience sensorielle complète, avec des environnements réalistes et des interactions plus engageantes.</p>
+  <p>La réalité virtuelle a permis de redynamiser l’esprit créatif des joueurs, de par ses infinies possibilités de jeu. D’ailleurs de plus en plus de joueurs filment leurs parties en VR et les diffusent sur les réseaux afin de partager leur expérience. Au niveau de la réalité augmentée, un bon exemple pour ce genre de nouvelle technologie ultra-réaliste, c’est le jeu Pokémon Go, qui a ouvert de nouvelles perspectives d’évolutions. On se souvient du succès de l’application en juillet 2016, et des rues bondées de joueurs à la recherche de leurs Pokémons préférés. 7 ans après sa sortie, le nombre de joueurs est toujours aussi impressionnant !</p>
+  <p>On peut également citer certains jeux VR à succès comme VRChat, BeatSaber où même Among Us. Pour les joueurs, la réalité virtuelle est une véritable aubaine pour s’immerger entièrement dans leur jeu favori. D’ailleurs de plus en plus de joueurs préfèrent une immersion totale dans leurs jeux préférés. D’ici 2024 ce ne sont pas moins de 46 millions de casques qui seront mis en service !</p>
+
+<h4>Intégration des Parcs d'Attractions</h4>
+
+  <iframe class ="video_gauche" src="https://www.youtube.com/embed/u3KSd9zekT4" frameborder="0" allowfullscreen></iframe>
+  <p>Le Dubai VR Park a été l'un des premiers exemples de réalité virtuelle dans le divertissement à fusionner réalité augmentée et réalité virtuelle au Moyen-Orient. Le parc est vu comme une utopie fantastique au milieu de la magnifique Dubaï. Alors qu'il  possède de merveilleuses attractions, le Burj Drop mérite une attention particulière. Il simule décent le Burj Khalifa. C'est une expérience fascinante où vous pouvez vraiment avoir l'impression de combattre la gravité tout en étant suspendu au-dessus du sol.</p>  
+  <p>La plupart des parcs à thème sont dans un état constant de développement. Les meilleurs parcs à thème changeront, se développeront et s'adapteront généralement aux possibilités offertes par les nouvelles technologies. Il n'est donc pas surprenant que la réalité virtuelle dans le divertissement s'intègre aux parcs à thème, cela ouvre la possibilité d'un nouveau type d'attraction. La réalité virtuelle augmente la fréquentation du parc, permet aux clients de mieux connaître la région, réduit les coûts lorsque l'ellee peut remplacer d'énormes projets de construction et rend tout plus sûr.</p>
+
+<footer>
+
+    <a href=origine.html><img src="images/fleche_gauche.png" class = "fleches" alt= "fleche pointant vers la gauche"></a>
+    1<sup><u>ère</u></sup> 2023/2024. Projet WEB - NSI : Yacine Riad - Rayan Benmoussa
+    <a href=professionnel.html><img src="images/fleche_droite.png" class = "fleches" alt= "fleche pointant vers la droite"></a>
+    
+    Page affichée le <span id="date"></span> à <span id="heure"></span>
+    <script>
+        const now = new Date();
+        const jour = now.toLocaleDateString('fr-FR', date);
+        const temps = now.toLocaleTimeString('fr-FR', heure);
+        document.getElementById('date').innerText = jour;
+        document.getElementById('heure').innerText = temps;
+    </script>
+
+</footer>   
+
+</body>
+</html>
